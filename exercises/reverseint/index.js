@@ -18,7 +18,7 @@ function reverseInt(n) {
                 num.push(i);
             }
         }
-            return parseInt(num.reverse().join(''));
+            return parseInt(num.toString().split('').reverse().join(''));
         } else {
             n = n.toString().split('');
             for (var i = 1; i < n.length; i++) {
@@ -26,7 +26,7 @@ function reverseInt(n) {
                 num.push(i);
             }
         }
-        return n[0] + parseInt(num.reverse().join(''));
+        return "-" + parseInt(num.toString().split('').reverse().join(''));
     }
 }
 
