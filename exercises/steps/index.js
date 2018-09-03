@@ -18,14 +18,16 @@
 //       '####'
 
 function steps(n) {
-    
-    for (let i = 0; i < n; i++) {
-        let stair = "";
-        for (let j =1; j < n; j++) {
-            if (j <= i) {
-                console.log("#");
+    for (let row = 0; row < n; row++) {
+        let stair = '';
+        for (let column =1; column < n; column++) {
+            if (column <= row) {
+                stair += '#';
+            } else {
+                stair += ' ';
             }
         }
+        console.log(stair);
     }
 }
 
