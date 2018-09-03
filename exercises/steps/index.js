@@ -17,8 +17,8 @@
 //       '### '
 //       '####'
 
-function steps(n) {
-    if (n === 0) {
+function steps(n, row = 0) {
+    if (n === row) {
         return;
     }
     
